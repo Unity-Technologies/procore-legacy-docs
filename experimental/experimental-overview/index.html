@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Experimental - ProBuilder Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/alerts.css" rel="stylesheet">
+  <link href="../../css/extra.css" rel="stylesheet">
+  <link href="../../css/general.css" rel="stylesheet">
+  <link href="../../css_site/site.css" rel="stylesheet">
+  <link href="../../css_site/youtube.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Experimental";
+    var mkdocs_page_input_path = "experimental/experimental-overview.md";
+    var mkdocs_page_url = "/experimental/experimental-overview/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ProBuilder Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../upgrading/overview/">Install ProBuilder</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../general/fundamentals/">Fundamentals</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Toolbar</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../toolbar/overview-toolbar/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/tool-panels/">Tool Windows</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/polyshape/">Poly Shape</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/selection-tools/">Selection Actions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/object-actions/">Object Actions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/vertex/">Vertex Actions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/edge/">Edge Actions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/face/">Face Actions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/all/">Element Actions</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Texture Mapping</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../texturing/overview-texture-mapping/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../texturing/uv-editor-toolbar/">UV Editor Toolbar</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../texturing/auto-uvs-actions/">Auto UVs Actions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../texturing/manual-uvs-actions/">Manual UVs Actions</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../general/menu-actions/">Menu Actions</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Experimental</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#overview">Overview</a></li>
+    
+
+    <li class="toctree-l2"><a href="#boolean-csg-tool">Boolean (CSG) Tool</a></li>
+    
+
+    <li class="toctree-l2"><a href="#bezier-shape">Bezier Shape</a></li>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../preferences/preferences/">Preferences</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../troubleshooting/faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../credits/">Third-Party Licenses</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../changelog/">Changelog</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ProBuilder Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Experimental</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="site"><a href="https://youtu.be/Ta3HkV_qHTc"><img src="../../images/VidLink_GettingStarted_Slim.png"></a></div>
+
+<hr />
+<h2 id="overview">Overview</h2>
+<p>ProBuilder has some additional features that are considered experimental. These are features that are either close to being complete, or complete with some caveats.</p>
+<p>By default <strong>Experimental Features</strong> are disabled. To enable experimental features:</p>
+<ul>
+<li>Open Unity Preferences (<code>Edit / Preferences</code> on Windows, <code>Unity / Preferences</code> Mac)</li>
+<li>Under the <strong>Experimental</strong> header, enable <strong>Experimental Features</strong></li>
+</ul>
+<div style="text-align:center">
+<img src="../../images/Experimental_Preferences.png">
+</div>
+
+<hr />
+<h2 id="boolean-csg-tool">Boolean (CSG) Tool</h2>
+<div style="text-align:center">
+<img src="../../images/Experimental_BooleanWindow.png">
+</div>
+
+<p>The Boolean Tool provides an interface for creating new meshes from boolean operations.</p>
+<p>Each function (Union, Subtract, Intersect) accepts 2 gameObjects: the left and right side. A new mesh is created.</p>
+<hr />
+<h2 id="bezier-shape"><img alt="Bezier Shape Icon" src="../../images/icons/NewBezierSpline.png" title="Bezier Shape Icon" /> Bezier Shape</h2>
+<div class="video-link">
+Section Video: <a href="https://youtu.be/WIyPObt3lro">Creating and Editing Bezier Shapes</a>
+</div>
+
+<div style="text-align:center">
+<img src="../../images/BezierShape_HeaderImage.png">
+</div>
+
+<h3>Quick Start</h3>
+
+<div style="text-align:center">
+<img src="../../images/Experimental_BezierShapeMenu.png">
+</div>
+
+<ul>
+<li>In the <a href="../../toolbar/overview-toolbar/">ProBuilder Toolbar</a> select <strong>New Bezier Shape</strong>.</li>
+<li>Move control &amp; tangent points by dragging.</li>
+<li>For precise controls, click a control point to select it (selected control points have a tranlate and rotation handle).</li>
+<li>To add a point click on the bezier path line.</li>
+<li>To remove a point, select it and press <code>Backspace</code> (<code>Delete</code> on Mac).</li>
+<li>To finish editing, click the "Editing Bezier Shape" button.</li>
+<li>To re-enter editing, click the "Edit Bezier Shape" button.</li>
+</ul>
+<div class="alert-box warning">
+<b>Important!</b><br />
+Modifying bezier control points or settings will clear any mesh edits.
+</div>
+
+<h3>Bezier Shape Inspector</h3>
+
+<div style="text-align:center">
+<img src="../../images/Experimental_BezierInspector.png">
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Inspector</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edit Bezier Shape</td>
+<td>Toggle in and out of shape editing mode.</td>
+</tr>
+<tr>
+<td>Position</td>
+<td>The local position of the selected control point.</td>
+</tr>
+<tr>
+<td>Tan. In</td>
+<td>The local position of the selected control tangent in handle.</td>
+</tr>
+<tr>
+<td>Tan. Out</td>
+<td>The local position of the selected control tangent out handle.</td>
+</tr>
+<tr>
+<td>Rotation</td>
+<td>An additional rotation to be applied to the vertices of the extruded tube.</td>
+</tr>
+<tr>
+<td>Tangent Mode</td>
+<td>Allows you to modify how interacting with tangent handles works.</td>
+</tr>
+<tr>
+<td>Clear Points</td>
+<td>Clear all control points on this mesh.</td>
+</tr>
+<tr>
+<td>Add Point</td>
+<td>Add a new control point at the end of the bezier path.</td>
+</tr>
+<tr>
+<td>CloseLoop</td>
+<td>Should the extruded path loop back around to the start point.</td>
+</tr>
+<tr>
+<td>Smooth</td>
+<td>Determines if the extruded pipe faces have hard or soft normals.</td>
+</tr>
+<tr>
+<td>Radius</td>
+<td>The radius of the extruded pipe.</td>
+</tr>
+<tr>
+<td>Rows</td>
+<td>How many segments to insert between control points when extruding the pipe.</td>
+</tr>
+<tr>
+<td>Columns</td>
+<td>How many vertices make up the ring around the radius of the pipe.</td>
+</tr>
+</tbody>
+</table>
+<h3>Tangent Modes</h3>
+
+<table>
+<thead>
+<tr>
+<th>Icon</th>
+<th>Tangent Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Free" src="../../../images/Bezier_Free.png" /></td>
+<td>Free</td>
+<td>Adjusting one tangent does not affect the other.</td>
+</tr>
+<tr>
+<td><img alt="Aligned" src="../../../images/Bezier_Aligned.png" /></td>
+<td>Aligned</td>
+<td>Adjusting a tangent will set the other tangent to match it's magnitude.</td>
+</tr>
+<tr>
+<td><img alt="Mirrored" src="../../../images/Bezier_Mirrored.png" /></td>
+<td>Mirrored</td>
+<td>Tangent handles are locked in a straight line.</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../preferences/preferences/" class="btn btn-neutral float-right" title="Preferences">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../general/menu-actions/" class="btn btn-neutral" title="Menu Actions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../general/menu-actions/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../preferences/preferences/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>

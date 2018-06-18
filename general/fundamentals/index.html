@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Fundamentals - ProBuilder Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/alerts.css" rel="stylesheet">
+  <link href="../../css/extra.css" rel="stylesheet">
+  <link href="../../css/general.css" rel="stylesheet">
+  <link href="../../css_site/site.css" rel="stylesheet">
+  <link href="../../css_site/youtube.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Fundamentals";
+    var mkdocs_page_input_path = "general/fundamentals.md";
+    var mkdocs_page_url = "/general/fundamentals/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ProBuilder Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../upgrading/overview/">Install ProBuilder</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Fundamentals</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#the-probuilder-toolbar">The ProBuilder Toolbar</a></li>
+    
+
+    <li class="toctree-l2"><a href="#creating-a-new-mesh">Creating a New Mesh</a></li>
+    
+
+    <li class="toctree-l2"><a href="#object-vs-element">Object vs Element</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#element-selection-and-manipulation">Element Selection and Manipulation</a></li>
+        
+            <li><a class="toctree-l3" href="#building-and-editing-complex-meshes">Building and Editing Complex Meshes</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l2"><a href="#texturing-and-uvs">Texturing and UVs</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#applying-materials">Applying Materials</a></li>
+        
+            <li><a class="toctree-l3" href="#editing-uvs">Editing UVs</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Toolbar</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../toolbar/overview-toolbar/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/tool-panels/">Tool Windows</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/polyshape/">Poly Shape</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/selection-tools/">Selection Actions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/object-actions/">Object Actions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/vertex/">Vertex Actions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/edge/">Edge Actions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/face/">Face Actions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/all/">Element Actions</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Texture Mapping</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../texturing/overview-texture-mapping/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../texturing/uv-editor-toolbar/">UV Editor Toolbar</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../texturing/auto-uvs-actions/">Auto UVs Actions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../texturing/manual-uvs-actions/">Manual UVs Actions</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../menu-actions/">Menu Actions</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../experimental/experimental-overview/">Experimental</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../preferences/preferences/">Preferences</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../troubleshooting/faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../credits/">Third-Party Licenses</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../changelog/">Changelog</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ProBuilder Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Fundamentals</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1>Getting Started with ProBuilder</h1>
+
+<p>First time using ProBuilder? Start here for an overview of creating your first mesh, editing geometry,
+applying materials, and UV editing.</p>
+<iframe class="youtube-preview" src="https://www.youtube.com/embed/Ta3HkV_qHTc" allowfullscreen></iframe>
+
+<hr />
+<h2 id="the-probuilder-toolbar">The ProBuilder Toolbar</h2>
+<p>All of ProBuilder's editing functions are available via the <a href="../../toolbar/overview-toolbar">ProBuilder Toolbar</a>, which dynamically adapts to your Edit Mode and selection.</p>
+<p><img alt="Toolbar Example" src="../../images/ProBuilderToolbar_GeoActionsArea.png" title="Toolbar Example" /></p>
+<p>Every toolbar button has a tooltip that will show a short summary about it's use. Viewing tooltips is a great way to start learning about ProBuilder's functionality.</p>
+<p><em>More Info: <a href="../../toolbar/overview-toolbar"><strong>ProBuilder Toolbar</strong></a></em></p>
+<hr />
+<h2 id="creating-a-new-mesh">Creating a New Mesh</h2>
+<p><img src="../../images/Cube_120x120.png" align="right"> Press <code>CTRL K</code> on your keyboard to spawn in a new ProBuilder-editable cube.</p>
+<p>To help you get started, ProBuilder includes a library of additional shapes. Each shape is customizable with starting dimensions and a set of parameters.</p>
+<p><img alt="Shape Tool Example" src="../../images/Example_ShapeToolsWithCurvedStair.png" /></p>
+<p><em>More Info: <a href="../../toolbar/tool-panels/#shape-tool"><strong>Shape Tool</strong></a></em></p>
+<hr />
+<p><a id="modes"></a></p>
+<h2 id="object-vs-element">Object vs Element</h2>
+<p><img alt="Editing Modes Example" src="../ExampleImage_ObjectAndElementEditingModes.png" title="Editing Modes Example" /></p>
+<p><strong>Object Mode</strong> is standard Unity mode, no surprises.</p>
+<p><strong>Elements</strong> are the individual parts that make up a mesh: <strong>Vertices</strong>, <strong>Edges</strong>, and <strong>Faces</strong>. Think of these like levels of detail on a map: city, state, country. An edge is made up of 2 vertices, a face is composed of 3 or more edges, and an object is the sum of all parts.</p>
+<p>Click in the <a href="../../toolbar/overview-toolbar/#edit-mode-toolbar">Edit Mode Toolbar</a> to change Mode, or use it's shortcut keys.</p>
+<ul>
+<li><strong>Vertex</strong>: Select and edit Vertices for detailed editing and functions like vertex splitting and connecting.</li>
+<li><strong>Edge</strong>: Select and edit Edges for semi-complex geometry editing, and Edge Loop Modeling techniques.</li>
+<li><strong>Face</strong>: Select and edit Faces on an object, performing basic tasks like deleting faces and extruding.</li>
+</ul>
+<h3 id="element-selection-and-manipulation">Element Selection and Manipulation</h3>
+<p>First, choose which element type you'd like to edit by clicking it's button in the <a href="../../toolbar/overview-toolbar/#edit-mode-toolbar">Edit Mode Toolbar</a>.</p>
+<p>Then use any of the standard Unity selection methods (click, drag, etc) and manipulation controls just like you would on any other object(s).</p>
+<h3 id="building-and-editing-complex-meshes">Building and Editing Complex Meshes</h3>
+<p>ProBuilder follows many of the same conventions as other 3D modeling applications, so experienced 3D artists will likely be able to jump right in after reading the <a href="../../toolbar/overview-toolbar">ProBuilder Toolbar</a> section.</p>
+<p>If you are new to 3D modeling, ProBuilder is a great way to get your feet wet.  Now would be a good time to check out the tutorial videos on the ProCore <a href="https://www.youtube.com/playlist?list=PLrJfHfcFkLM8PDioWg_5nmUqQycnVmi58">Youtube playlist</a>.</p>
+<hr />
+<h2 id="texturing-and-uvs">Texturing and UVs</h2>
+<p><img alt="Materials Example" src="../../images/Example_MaterialsOnLevel.png" title="Materials Example" /></p>
+<h3 id="applying-materials">Applying Materials</h3>
+<p>You can apply <strong>any</strong> material to ProBuilder meshes using the <a href="../../toolbar/tool-panels/#material-tools">Material Palette</a>.</p>
+<p>Materials can also be applied to individual faces of a ProBuilder mesh, while in <a href="../../toolbar/overview-toolbar/#edit-mode-toolbar">Element Mode</a>.</p>
+<p><em>More Info: <a href="../../toolbar/tool-panels/#material-tools"><strong>Material Tools</strong></a></em></p>
+<h3 id="editing-uvs">Editing UVs</h3>
+<p>ProBuilder provides <a href="../../texturing/auto-uvs-actions">automatic UV unwrapping</a>, as well as a complete <a href="../../texturing/manual-uvs-actions">manual UV editor</a>.</p>
+<p><strong>Auto UV</strong> mode lets you tweak basics like offset, tiling, and rotation, while ProBuilder handles the complex UV work automatically.</p>
+<p><strong>Manual UV</strong> mode enables complete control of the UVs. With this workflow you can lay out your UV maps exactly how you want.</p>
+<p><strong>You may use whichever you prefer, or a mix of both, even on the same mesh.</strong></p>
+<p><em>More Info: <a href="../../texturing/overview-texture-mapping"><strong>Texturing and UVs</strong></a></em></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../toolbar/overview-toolbar/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../upgrading/overview/" class="btn btn-neutral" title="Install ProBuilder"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../upgrading/overview/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../toolbar/overview-toolbar/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>
