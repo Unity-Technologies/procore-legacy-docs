@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Interface - ProGrids Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../css/alerts.css" rel="stylesheet">
+  <link href="../css/extra.css" rel="stylesheet">
+  <link href="../css/general.css" rel="stylesheet">
+  <link href="../css/site.css" rel="stylesheet">
+  <link href="../css/youtube.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Interface";
+    var mkdocs_page_input_path = "interface.md";
+    var mkdocs_page_url = "/interface/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ProGrids Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../install/">Install</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Interface</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#1-snap-size-and-settings">1. Snap Size and Settings</a></li>
+    
+
+    <li class="toctree-l2"><a href="#2-grid-visibility">2. Grid Visibility</a></li>
+    
+
+    <li class="toctree-l2"><a href="#3-snapping-enabled">3. Snapping Enabled</a></li>
+    
+
+    <li class="toctree-l2"><a href="#4-push-to-grid">4. Push to Grid</a></li>
+    
+
+    <li class="toctree-l2"><a href="#5-follow-grid">5. Follow Grid</a></li>
+    
+
+    <li class="toctree-l2"><a href="#6-7-8-9-set-grid-plane">6, 7, 8, 9. Set Grid Plane</a></li>
+    
+
+    <li class="toctree-l2"><a href="#angle-visibility">Angle Visibility</a></li>
+    
+
+    <li class="toctree-l2"><a href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../preferences/">Preferences</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ProGrids Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Interface</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1>The Interface</h1>
+
+<p><img alt="interface" src="../images/interface.png" /></p>
+<p>The ProGrids Panel displays the following buttons and options:</p>
+<h2 id="1-snap-size-and-settings">1. Snap Size and Settings <img alt="gui_snap-size" src="../images/icons/snap-size.png" /></h2>
+<p>Click this button to open the snap settings window, where-in you can set snap increment and other settings.</p>
+<p>Units are in meters by default, or you can choose inches, feet, etc. See the <a href="../preferences/">Preferences</a> section for more details.</p>
+<blockquote>
+<p><strong>Hint</strong> Use the <code>+</code> and <code>-</code> keys to quickly change the Snap Size</p>
+</blockquote>
+<p><img alt="scene-settings" src="../images/scene-settings.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Snap Value</td>
+<td>Set the increment to snap objects to in world coordinates</td>
+</tr>
+<tr>
+<td>Major Line Increment</td>
+<td>How many lines to show between highlighted lines</td>
+</tr>
+<tr>
+<td>Snap on Scale</td>
+<td>When enabled, applies snapping to object scale values</td>
+</tr>
+<tr>
+<td>Snap as Group</td>
+<td>When enabled, multiple selected objects retain their relative positions to one another when moving</td>
+</tr>
+<tr>
+<td>Grid Units</td>
+<td>Defines the unit of measurement that snap value is measured in</td>
+</tr>
+<tr>
+<td>Angle</td>
+<td>When in orthographic views an additional line is drawn at this angle</td>
+</tr>
+<tr>
+<td>Predictive Grid</td>
+<td>When enabled, ProGrids will automatically set the rendering grid plane according to object movement</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-grid-visibility">2. Grid Visibility <img alt="gui_vis-on" src="../images/icons/grid-vis.png" /></h2>
+<p>Toggle the grid visuals on or off.</p>
+<p>Note that objects will still snap with grid visibility toggled off.</p>
+<h2 id="3-snapping-enabled">3. Snapping Enabled <img alt="gui_snap-on" src="../images/icons/snap-enabled.png" /></h2>
+<p>Enable or disable snapping to the grid when moving objects.</p>
+<h2 id="4-push-to-grid">4. Push to Grid <img alt="gui_push-to-grid" src="../images/icons/push-to-grid.png" /></h2>
+<p>Move all selected objects to on-grid positions, on each axis.</p>
+<h2 id="5-follow-grid">5. Follow Grid <img alt="lock grid" src="../images/icons/grid-lock.png" /></h2>
+<p>When enabled the grid will automatically move position itself at the origin of the current selection. When disabled (or "locked") the grid stays anchored at it's position.</p>
+<p>While <strong>locked</strong> you can "nudge" the X, Y, or Z grid along it's axis by using the bracket (<code>[ ]</code>) keys.</p>
+<h2 id="6-7-8-9-set-grid-plane">6, 7, 8, 9. Set Grid Plane</h2>
+<h2>6. Set Grid Plane X <img src="../images/icons/grid-x.png" alt="set grid plane"></h2>
+
+<p>Set the grid to render on the <code>X</code> axis (facing to the left/right).</p>
+<h2>7. Set Grid Plane Y <img src="../images/icons/grid-y.png" alt="set grid plane"></h2>
+
+<p>Set the grid to render on the <code>Y</code> axis (facing up/down).</p>
+<h2>8. Set Grid Plane Z <img src="../images/icons/grid-z.png" alt="set grid plane"></h2>
+
+<p>Set the grid to render on the <code>Z</code> axis (facing forwards/backwards).</p>
+<h2>9. Perspective Grid <img src="../images/icons/perspective.png" alt="perspective grid"></h2>
+
+<p>Renders a grid with all 3 axes.</p>
+<p><img alt="grid-views" src="../images/gridViews_600px.png" /></p>
+<h2 id="angle-visibility">Angle Visibility <img alt="angle vis" src="../images/icons/angle-vis.png" /></h2>
+<p>Toggle the visibility of the angle guides when in orthographic scene rendering mode.</p>
+<h2 id="keyboard-shortcuts">Keyboard Shortcuts</h2>
+<p>Single key shortcuts are enabled when the scene view is in focus.</p>
+<p><code>+</code> <em>or</em> <code>-</code> : Hit the "plus" or "minus" key to make the grid larger/smaller by one increment (see "Customizing ProGrids")</p>
+<p><code>[</code> <em>or</em> <code>]</code> : Use the bracket keys to nudge the X, Y, or Z grids perpendicular to their facing direction, by one increment.</p>
+<p><code>S</code> : Hold <code>S</code> to swap between Axis Constraint Modes (see "Axis Constraints", above)</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../preferences/" class="btn btn-neutral float-right" title="Preferences">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../install/" class="btn btn-neutral" title="Install"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../install/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../preferences/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>

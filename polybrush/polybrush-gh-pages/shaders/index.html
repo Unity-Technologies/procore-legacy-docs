@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Writing Texture Blend Shaders - Polybrush</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../css/alerts.css" rel="stylesheet">
+  <link href="../css/extra.css" rel="stylesheet">
+  <link href="../css/general.css" rel="stylesheet">
+  <link href="../css_site/site.css" rel="stylesheet">
+  <link href="../css_site/youtube.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Writing Texture Blend Shaders";
+    var mkdocs_page_input_path = "shaders.md";
+    var mkdocs_page_url = "/shaders/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Polybrush</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../quickstart/">Quick Start</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../interface/">The Interface</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Modes</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/modes/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/raise/">Push / Pull</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/smooth/">Smooth</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/color/">Vertex Color</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/texture/">Texture Blend</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../brushMirroring/">Brush Mirroring</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../brushSettings/">Brush Settings</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Writing Texture Blend Shaders</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#defining-channel-data-in-shader-code-legacy">Defining Channel Data in Shader Code (Legacy)</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#metadata-file">MetaData File</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#with-shaderforge">With ShaderForge</a></li>
+                
+                    <li><a class="toctree-l4" href="#post-processing">Post-Processing</a></li>
+                
+                    <li><a class="toctree-l4" href="#accessing-vector4-uvs">Accessing Vector4 UVs</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#faq">F.A.Q.</a></li>
+                
+                    <li><a class="toctree-l4" href="#texture-palette-doesnt-match-whats-painted">Texture Palette Doesn't Match What's Painted</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../settings/">Settings</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../troubleshooting/">Troubleshooting / F.A.Q.</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Polybrush</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Writing Texture Blend Shaders</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Constructing a shader that is compatible with <strong>Polybrush</strong>'s <strong>Texture Paint Mode</strong> is very simple.  You can either write your code by hand, or use <strong>ShaderForge</strong>.</p>
+<p><strong>Polybrush</strong> will pass texture blending information to the shader using some combination of mesh attributes (ex; via color, tangent, uv0, uv2, etc).</p>
+<p>There are two methods for passing information about how a shader uses mesh data: </p>
+<ul>
+<li>By defining in shader code which mesh channels to look for data in (UV, Color, etc)</li>
+<li>By creating a separate metadata file that stores per-attribute information</li>
+</ul>
+<p>If your shader just wants to map <code>Color.R</code> to <code>_Texture1</code>, <code>Color.G</code> to <code>_Texture2</code>, etc go with the first option.  If your shader has more complex interactions with attribute information, use the metadata method.</p>
+<h2 id="defining-channel-data-in-shader-code-legacy">Defining Channel Data in Shader Code (<strong>Legacy</strong>)</h2>
+<p>If your shader simply blends between textures using normalized values set in a mesh array, you can use this method to make the shader compatible with Polybrush.</p>
+<ol>
+<li>Somewhere in the shader you must define how many textures are used: <code>define Z_TEXTURE_CHANNELS 8</code></li>
+<li>Somewhere in the shader the mesh attributes used must be defined: <code>define Z_MESH_ATTRIBUTES COLOR UV UV3</code>
+    The order in which the mesh attributes are defined also tells <strong>Polybrush</strong> which <code>Texture</code> inputs belong to which attribute.  For example, <code>define Z_MESH_ATTRIBUTES UV0 UV3 UV4</code> tells <strong>Polybrush</strong> that the first 4 textures should map to the 4 values in each vertex <code>uv0</code> property, the next 4 textures belong to <code>uv3</code>, and so on.</li>
+</ol>
+<p>The available mesh attributes values are <code>UV0, UV2, UV3, UV4, COLOR, TANGENT</code>.  Each value should only be used at most once.</p>
+<p><strong>Polybrush</strong> accesses these statements by searching the shader source, so they may be either provided in a comment or defined.</p>
+<pre><code>#define Z_TEXTURE_CHANNELS 8
+// is the same as
+// define Z_TEXTURE_CHANNELS 8
+</code></pre>
+<p>Here's what this could look like in shader code (boring bits omitted)</p>
+<pre><code>Properties
+{
+    _MainTex ("Texture", 2D) = "white" {}
+    _Texture1 ("Texture 1", 2D) = "white" {}
+    _Texture2 ("Texture 2", 2D) = "white" {}
+    _Texture3 ("Texture 3", 2D) = "white" {}
+    _Texture4 ("Texture 4", 2D) = "white" {}
+    _Texture5 ("Texture 5", 2D) = "white" {}
+}
+SubShader
+{
+    Pass
+    {
+        // Tell Polybrush that this shader supports 6 texture channels (Texture, Texture 1, so on)
+        #define Z_TEXTURE_CHANNELS 6
+
+        // Tells Polybrush that the shader expects data in the uv3 and uv4 channels
+        // (4 components in uv3, 2 in uv4)
+        #define Z_MESH_ATTRIBUTES UV3 UV4
+
+        struct appdata
+        {
+            // local position
+            float4 vertex : POSITION;
+            // the texture coordinate
+            float2 uv : TEXCOORD0;
+            // float2 uv1 : TEXCOORD1; // not used (this would be mesh.uv2)
+            // mesh.uv3 data
+            float4 uv2 : TEXCOORD2;
+            // mesh.uv4 data
+            float4 uv3 : TEXCOORD3;
+        }
+
+        etc...
+</code></pre>
+<p>In this example <strong>Polybrush</strong> will show 6 textures in the palette and map each texture's strength to <code>mesh.uv.xyzw</code> and <code>mesh.uv3.xy</code> respectively.</p>
+<p>Check out the shader <em>z_UnlitTextureBlend.shader</em> for a simple working example.</p>
+<h2 id="metadata-file">MetaData File</h2>
+<p><strong>Polybrush</strong> can store fine-grained instructions for interpreting mesh data in the form of a metadata file.  A metadata file is composed of a shader reference (pointing to the shader it describes) and a list of <code>z_AttributeLayout</code> entries.  Each entry contains all the necessary information about how a value is used in a shader for <strong>Polybrush</strong> to work with.</p>
+<p>When <strong>Polybrush</strong> loads a material into <strong>Texture Mode</strong> it will first search for an accompanying <code>ShaderName.pbs.json</code> file, then try to fall back on the Legacy method (searching for <code>Z_DEFINE_MESH_ATTRIBUTES</code> in shader source).</p>
+<div class="sub-header">Creating MetaData</div>
+
+<p>To create a new <strong>Polybrush</strong> metadata file:</p>
+<ul>
+<li>Select the shader you want to work with.</li>
+<li>Right click (Option click Mac) the Shader and select <code>Create/Polybrush/Shader MetaData</code>.</li>
+</ul>
+<p>By default <strong>Polybrush</strong> creates the new file using the name of the selected shader, placing it in the same directory.  This is where <strong>Polybrush</strong> will look for metadata.  To specify a different name or path, in the shader add the following comment:</p>
+<pre><code>// Z_SHADER_METADATA MyMetaDataFolder/SomeOtherName.pbs.json
+</code></pre>
+
+<p>The path provided after <code>Z_SHADER_METADATA</code> is relative to the directory of the shader.</p>
+<div class="sub-header">Editing MetaData</div>
+
+<p>Mercifully, you do not have to write this metadata by hand (though you can if you'd like to).</p>
+<p><img alt="" src="../shader/tri_planar_pbs.png" /></p>
+<ul>
+<li>
+<p><strong>Property Target</strong> - The shader property that this attribute will affect.  </p>
+<p>More complex interactions may not map to a single property, so this field may be either the name of a property, or a simple description.</p>
+<p>If the string provided to this field matches a <code>2D</code> property in the shader, <strong>Polybrush</strong> will load the material's texture matching this property name.   If it does not match a texture property, this string will be shown as the preview in the texture selection well.</p>
+</li>
+<li>
+<p><strong>Channel</strong> - The mesh channel that this attribute will draw from.</p>
+</li>
+<li><strong>Index</strong> - Which component of the channel this attribute receives data from.</li>
+<li><strong>Range</strong> - The range (x is min, y is max) that this attribute will operate in.</li>
+<li><strong>Group</strong> - Attributes with matching groups will affect one another when applied.  Use <code>No Mask</code> to mark that this attribute will always operate independently.</li>
+</ul>
+<div class="sub-header">How Polybrush Applies Texture Data</div>
+
+<p>When a texture is selected in <strong>Texture Mode</strong>, <strong>Polybrush</strong> sets a new target value for each attribute matching the selected attributes <strong>group</strong>.  The selected attribute has its target value set to <strong>Range</strong>.max, while all other attributes in the group are set to their <strong>Range</strong>.min value.  <strong>Polybrush</strong> then applies this new mix of attribute values to the mesh, taking into account brush strength and falloff.</p>
+<div class="sub-header">A Simple Example</div>
+
+<p>Say you have a shader with 5 textures; a base texture and 4 blend textures.  This shader reads texture blending information from the <code>mesh.color</code> channel.  The final fragment color is built using the following formula:</p>
+<pre><code>// sample the texture
+fixed4 col1 = tex2D(_MainTex, i.uv);
+fixed4 col2 = tex2D(_Texture1, i.uv) * i.color.y;
+fixed4 col3 = tex2D(_Texture2, i.uv) * i.color.z;
+fixed4 col4 = tex2D(_Texture3, i.uv) * i.color.w;
+
+float snowMix = i.color.x * ((cnoise(i.uv * _SnowTiling) + 1) * .5);
+fixed4 final_color = lerp(lerp(lerp(col1, col2, i.color.y), col3, i.color.z), col4, i.color.w);
+final_color = lerp(final_color, _SnowColor, snowMix);
+</code></pre>
+
+<p>In this case you'll want <strong>Polybrush</strong> to show 5 entries in the <strong>Texture Palette</strong>: 4 textures and "Snow".  This means the metadata needs 5 entries.</p>
+<p>All the texture properties are related, meaning when one value is set to maximum strength the others should be set to minimum strength.  To do this, create each for these attributes with the same group.</p>
+<p>The attribute values are set like so:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Channel</th>
+<th>Component</th>
+<th>Range</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>_MainTex</td>
+<td>Color</td>
+<td>G</td>
+<td>{ 1, 0 }</td>
+<td>0</td>
+</tr>
+<tr>
+<td>_Texture1</td>
+<td>Color</td>
+<td>G</td>
+<td>{ 0, 1 }</td>
+<td>0</td>
+</tr>
+<tr>
+<td>_Texture2</td>
+<td>Color</td>
+<td>B</td>
+<td>{ 0, 1 }</td>
+<td>0</td>
+</tr>
+<tr>
+<td>_Texture3</td>
+<td>Color</td>
+<td>A</td>
+<td>{ 0, 1 }</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Snow</td>
+<td>Color</td>
+<td>R</td>
+<td>{ 0, 1 }</td>
+<td>No Mask</td>
+</tr>
+</tbody>
+</table>
+<p>You may have noticed that <code>_MainTex</code> and <code>_Texture1</code>  share a common channel.  The reason is that <code>_MainTex</code> is special in that it does not map it's strength to a single attribute, rather, its strength is determined by the lack of strength in the other texture channels.  </p>
+<p>To accomplish this, we set <code>_MainTex</code> to use the <code>Color</code> channel and register it to the <code>G</code> field.  However, instead of setting the strength from 0 to 1 it is from 1 to 0.  That means when <strong>Polybrush</strong> applies <code>_MainTex</code> at full strength the <code>Color.G</code> field will be 0, and the <code>Color.B</code> and <code>Color.A</code> fields will also be 0 (since their min values are 0).</p>
+<p>Snow is also a special case.  Since it is a generated effect in the shader it does not map to a texture property.  <strong>Polybrush</strong> will display the name "Snow" for this value.  By setting the group to "No Mask" we're telling <strong>Polybrush</strong> that this value should be modified independent of all other attributes.  That means when you're applying Snow at full strength all other attributes will remain unaffected.</p>
+<h2 id="with-shaderforge">With ShaderForge</h2>
+<h4 id="post-processing">Post-Processing</h4>
+<p>Shaders built with <strong>ShaderForge</strong> require some additional work to be compatible with <strong>Polybrush</strong>.  Fortunately through some post-processing this process is extremely simple.  In short, <strong>Polybrush</strong> will automatically listen for changes to any shader with the suffix <em>_SfSrc</em>, then make some changes to the source code and compile a new shader right next to it (omitting the suffix so you aren't confused).</p>
+<p>For example, if you have <em>MyNeatoShaderForgeShader_SfSrc.shader</em> it will be compiled and renamed to <em>MyNeatoShaderForgeShader.shader</em>.  Use this shader in your game (not the suffixed one!).</p>
+<p>Similar to writing shader code, you need to define how many textures are used and what mesh attributes data is provided in.  Usually this means as a comment on one of the nodes (right click and select "Edit Comment").</p>
+<p>It is required that all ShaderForge shaders have the following two lines present in node comments:</p>
+<ol>
+<li>
+<p><em>define Z_TEXTURE_CHANNELS 8</em></p>
+<p>Where the last number is the number of textures used.</p>
+</li>
+<li>
+<p><em>define Z_MESH_ATTRIBUTES UV3 UV4</em></p>
+<p>Where the values following Z_MESH_ATTRIBUTES is the mesh properties that are accessed.  Available values are <code>UV0, UV2, UV3, UV4, COLOR, TANGENT</code>.</p>
+</li>
+</ol>
+<p>In addition, shaders must be named with the suffix <em>_SfSrc</em> (ex, <em>MySimpleBlendShader_SfSrc.shader</em>).  This lets <strong>Polybrush</strong> know that this shader requires some post-processing.</p>
+<p>The <strong>Shader Settings / Path</strong> must be set to <em>Hidden</em> (ex, <em>Hidden/MyShader</em>).  <strong>Polybrush</strong> will automatically detect this and remove the <em>Hidden</em> part from the path when compiling the new shader.  If you're having issues with black triangles on a mesh, check that the shader has <strong>Hidden/</strong> in it's path.</p>
+<p>Here is a basic 4 texture blend shader in ShaderForge.  This shader blends the 4 textures using <code>mesh.uv3</code> as input.  Note the comments <em>Z_TEXTURE_CHANNELS 4</em> on the <code>Main</code> node and <em>Z_MESH_ATTRIBUTES UV3</em> on the <code>Vector4 Property</code> node.</p>
+<p><img alt="" src="../ShaderForge.png" /></p>
+<h4 id="accessing-vector4-uvs">Accessing Vector4 UVs</h4>
+<p>Due to a limitation in ShaderForge, accessing UV data as <code>Vector4</code> types requires some extra work.  To read a UV as a <code>fixed4</code> in graph language, first</p>
+<ol>
+<li>Create a <code>UV Coord.</code> node matching the channel you would like to read blend information from.</li>
+<li>Create a <code>Vector4 Property</code> node named <code>TEMP_CHANNEL_UV0</code> (or <code>TEMP_CHANNEL_UV1</code>, or <code>TEMP_CHANNEL_UV2</code> etc, where the final number matches the channel specified in the <code>UV Coord.</code> node).</li>
+<li>Create an <code>Append</code> node and connect the <code>uv.u</code>, <code>uv.v</code>, <code>TEMP_CHANNEL_0.z</code> and <code>TEMP_CHANNEL_0.w</code>.  It is important that you not swizzle the <code>UV Coord.</code> input.</li>
+<li>Use the <code>Append</code> output as though it was the <code>uv0</code> channel.</li>
+</ol>
+<p><img alt="" src="../MeshUV3Channel.png" /></p>
+<p>In shader code, the texture coordinates are always zero indexed, where in Unity you may be used to seeing the <code>uv0</code> channel called simply <code>uv</code> and the <code>uv1</code> channel called <code>mesh.uv2</code>.</p>
+<p>If you're confused, here's a graph mapping the <code>mesh</code> property to it's shader counterpart.</p>
+<table>
+<thead>
+<tr>
+<th>Mesh</th>
+<th>Shader</th>
+<th>Vector4 Node Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mesh.uv</code> or <code>mesh.uv2</code></td>
+<td><code>uv0</code></td>
+<td><code>TEMP_CHANNEL_UV0</code></td>
+</tr>
+<tr>
+<td><code>mesh.uv2</code></td>
+<td><code>uv1</code></td>
+<td><code>TEMP_CHANNEL_UV1</code></td>
+</tr>
+<tr>
+<td><code>mesh.uv3</code></td>
+<td><code>uv2</code></td>
+<td><code>TEMP_CHANNEL_UV2</code></td>
+</tr>
+<tr>
+<td><code>mesh.uv4</code></td>
+<td><code>uv3</code></td>
+<td><code>TEMP_CHANNEL_UV3</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="faq">F.A.Q.</h2>
+<h3 id="texture-palette-doesnt-match-whats-painted">Texture Palette Doesn't Match What's Painted</h3>
+<p>Make sure that the properties are listed in the correct order (they will be matched sequentially to the <code>Z_MESH_ATTRIBUTES</code> list).</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../settings/" class="btn btn-neutral float-right" title="Settings">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../brushSettings/" class="btn btn-neutral" title="Brush Settings"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../brushSettings/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../settings/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

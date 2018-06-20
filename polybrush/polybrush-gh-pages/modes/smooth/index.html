@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Smooth - Polybrush</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/alerts.css" rel="stylesheet">
+  <link href="../../css/extra.css" rel="stylesheet">
+  <link href="../../css/general.css" rel="stylesheet">
+  <link href="../../css_site/site.css" rel="stylesheet">
+  <link href="../../css_site/youtube.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Smooth";
+    var mkdocs_page_input_path = "modes/smooth.md";
+    var mkdocs_page_url = "/modes/smooth/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Polybrush</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../quickstart/">Quick Start</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../interface/">The Interface</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Modes</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../raise/">Push / Pull</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Smooth</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#about">About</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#usage">Usage</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#settings">Settings</a></li>
+                
+                    <li><a class="toctree-l4" href="#ignore-open-edges">Ignore Open Edges</a></li>
+                
+                    <li><a class="toctree-l4" href="#brush-normal-is-sticky">Brush Normal is Sticky</a></li>
+                
+                    <li><a class="toctree-l4" href="#direction">Direction</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../color/">Vertex Color</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../texture/">Texture Blend</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../brushMirroring/">Brush Mirroring</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../brushSettings/">Brush Settings</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../shaders/">Writing Texture Blend Shaders</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../settings/">Settings</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../troubleshooting/">Troubleshooting / F.A.Q.</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Polybrush</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Modes &raquo;</li>
+        
+      
+    
+    <li>Smooth</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><img alt="Smooth" src="../smooth.jpg" /></p>
+<h2 id="about">About</h2>
+<p>The <strong>Smooth</strong> tool averages the differences between vertex positions along a axis (set by <strong>Direction</strong>).  Use this mode to make your jagged vertices more uniform.</p>
+<h2 id="usage">Usage</h2>
+<p>Select any mesh object, enter <strong>Push/Pull</strong> mode, then click and drag while hovering over the selected mesh.</p>
+<p>The actual movement of vertices will be affected by the current <strong>Brush Settings</strong>.  Check out the <a href="../../brushSettings/">Brush Settings</a> page for more information on how.</p>
+<h2 id="settings">Settings</h2>
+<h3 id="ignore-open-edges">Ignore Open Edges</h3>
+<p>When <strong>Ignore Open Edges</strong> is enabled, any vertices that make up an open edge (eg, an edge that is only a part of one face) will not be affected by the brush.</p>
+<p><img alt="Ignore Edges" src="../ignoreEdges.jpg" /></p>
+<h3 id="brush-normal-is-sticky">Brush Normal is Sticky</h3>
+<p>When the brush direction is set to <code>Brush Normal</code> this locks the vertex movement direction to the axis the brush normal is facing at the time of first application.</p>
+<h3 id="direction">Direction</h3>
+<p><strong>Direction</strong> determines how vertices move.  <strong>Up</strong>, <strong>Down</strong>, and <strong>Forward</strong> move vertices along the X, Y, and Z axes respectively.  <strong>Brush Normal</strong> moves vertices along axis of the brush orientation's up direction.  <strong>Vertex Normal</strong> moves vertices along their normals.  Use <strong>Vertex Normal</strong> on objects like spheres where you want the movement to be relative to the direction of the affected vertices.</p>
+<p>In <strong>Smooth</strong> mode the <strong>Vertex Normal</strong> brush direction behaves slightly differently than you might expect - instead of constraining the movement path to the normal each vertex position will be averaged with it's neighbors.  This is very handy for reducing large gaps in vertex positions and making your mesh look super-smooth.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../color/" class="btn btn-neutral float-right" title="Vertex Color">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../raise/" class="btn btn-neutral" title="Push / Pull"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../raise/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../color/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

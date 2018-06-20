@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Quick Start - Polybrush</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../css/alerts.css" rel="stylesheet">
+  <link href="../css/extra.css" rel="stylesheet">
+  <link href="../css/general.css" rel="stylesheet">
+  <link href="../css_site/site.css" rel="stylesheet">
+  <link href="../css_site/youtube.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Quick Start";
+    var mkdocs_page_input_path = "quickstart.md";
+    var mkdocs_page_url = "/quickstart/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Polybrush</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Quick Start</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#1-open-the-polybrush-window">1) Open the Polybrush Window</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#2-choose-a-mesh-to-edit">2) Choose a Mesh to Edit</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#3-sculpt-your-mesh">3) Sculpt Your Mesh</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#4-paint-pretty-colors">4) Paint Pretty Colors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#5-blend-fancy-textures">5) Blend Fancy Textures</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#summary">Summary</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../interface/">The Interface</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Modes</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/modes/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/raise/">Push / Pull</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/smooth/">Smooth</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/color/">Vertex Color</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/texture/">Texture Blend</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../brushMirroring/">Brush Mirroring</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../brushSettings/">Brush Settings</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../shaders/">Writing Texture Blend Shaders</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../settings/">Settings</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../troubleshooting/">Troubleshooting / F.A.Q.</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Polybrush</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Quick Start</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 class="site">Getting Started With Polybrush</h1>
+
+<div class="video-link">
+Complete Video: <a href="@todo link vid section">Getting Started With Polybrush</a>
+</div>
+
+<p>First time using Polybrush?  Start here for a quick and pain-free overview of the essentials, plus links to more advanced learning.</p>
+<p><strong>Questions or Concerns?</strong>  Please let us know via <a href="mailto:contact@procore3d.com"><strong>email</strong></a> or on the <a href="http://www.procore3d.com/forum"><strong>forum</strong></a>.  We'll be happy to help!</p>
+<hr />
+<h3 id="1-open-the-polybrush-window">1) Open the Polybrush Window</h3>
+<div class="video-link">
+Quick Video: <a href="@todo link vid section">The Polybrush Window</a>
+</div>
+
+<p>From the Unity menu bar, choose <code>Tools &gt; Polybrush &gt; Polybrush Window</code>. This opens the <a href="../panel-overview"><strong>Polybrush Window</strong></a>, which you will use for 99% of <strong>Polybrush</strong> functionality.</p>
+<div style="text-align:center">
+<img src="../images/PolybrushPanel_Off.png" alt="Polybrush Window">
+</div>
+
+<hr />
+<h3 id="2-choose-a-mesh-to-edit">2) Choose a Mesh to Edit</h3>
+<div class="video-link">
+Quick Video: <a href="@todo link vid section">Choosing a Mesh to Edit</a>
+</div>
+
+<p><strong>Polybrush</strong> will automatically work on any mesh, but for now we'll use a Unity primitve mesh.</p>
+<p>To create a sphere primitive, in the Unity menu bar choose <code>Game Object &gt; 3D Object &gt; Sphere</code></p>
+<div style="text-align:center">
+<img src="../images/SphereMesh.png" alt="Sphere">
+</div>
+
+<blockquote>
+<p>You can also use <a href="http://www.procore3d.com/probuilder"><strong>ProBuilder</strong></a> meshes for an even more powerful workflow!</p>
+</blockquote>
+<hr />
+<h3 id="3-sculpt-your-mesh">3) Sculpt Your Mesh</h3>
+<div class="video-link">
+Quick Video: <a href="@todo link vid section">Mesh Sculpting and Smoothing</a>
+</div>
+
+<p>Let's make this sphere look more interesting!</p>
+<ol>
+<li>The default Unity sphere is only 1 meter across, so let's scale it up about 10x.</li>
+<li>Activate <a href="../modes/#push-pull"><strong>Push / Pull Mode</strong></a> by clicking it's icon (<img alt="push-pull" src="../images/icons/Sculpt.png" />) in the <a href="../panel-overview/#mode-toolbar"><strong>Mode Toolbar</strong></a>.</li>
+<li>Hover your mouse over the Sphere, and <code>Left Click</code> to "pull", <code>Shift Left Click</code> to "push" geometry.</li>
+<li>To smooth out hard edges, activate <a href="../modes/#smoothing"><strong>Smoothing Mode</strong></a> (<img alt="smoothing" src="../images/icons/Smooth.png" />) and brush the mesh with <code>Left Click</code>.</li>
+</ol>
+<div style="text-align:center">
+<img src="../images/SphereMesh_Sculpt.png" alt="Sculpting Sphere">
+</div>
+
+<hr />
+<h3 id="4-paint-pretty-colors">4) Paint Pretty Colors</h3>
+<div class="video-link">
+Quick Video: <a href="@todo link vid section">Painting Vertex Colors</a>
+</div>
+
+<p>Danger, Danger! The default Unity material won't show <a href="../@todo"><strong>Vertex Coloring</strong></a>, so let's create a new material that will:</p>
+<ol>
+<li>In your Project Panel, right-click and choose <code>Create &gt; Material</code>, then give it a really cool name</li>
+<li>With the new material selected, look at the top of the Inspector Panel- see that drop-down labeled "Shader"?  Click it, and choose <code>Polybrush &gt; Standard Vertex Color</code></li>
+<li>Apply this material to the mesh you'd like to paint</li>
+</ol>
+<blockquote>
+<p>Hey custom shader people! You can use <strong>any</strong> shader, as long as it supports vertex colors</p>
+</blockquote>
+<p>Now we're ready to paint vertex colors:</p>
+<ol>
+<li>Activate <a href="../modes/#color-painting"><strong>Color Painting Mode</strong></a> by clicking it's icon (<img alt="color-painting" src="../images/icons/Palette.png" />) in the <a href="../panel-overview/#mode-toolbar"><strong>Mode Toolbar</strong></a>.</li>
+<li>Click to select a color from the <a href="../modes/color-painting/#color-palette"><strong>Color Palette</strong></a> buttons at the bottom of the <a href="../panel-overview"><strong>Polybrush Panel</strong></a>.</li>
+<li>Hover your mouse over the Sphere, and <code>Left Click</code> to paint, <code>Shift Left Click</code> to erase.</li>
+</ol>
+<div style="text-align:center">
+<img src="../images/SphereMesh_ColorPaint.png" alt="Painting Sphere">
+</div>
+
+<hr />
+<h3 id="5-blend-fancy-textures">5) Blend Fancy Textures</h3>
+<div class="video-link">
+Quick Video: <a href="@todo link vid section">Texture Blending</a>
+</div>
+
+<p><a href="../@todo"><strong>Texture Blending</strong></a> requires a special shader- you can create your own, or use ours:</p>
+<ol>
+<li>In your Project Panel, right-click and choose <code>Create &gt; Material</code>.</li>
+<li>With the new material selected, look at the top of the Inspector Panel- see that drop-down labeled "Shader"? Click it, and choose <code>Polybrush &gt; Standard Texture Blend</code>.</li>
+<li>Apply this material to the mesh you'd like to paint.</li>
+</ol>
+<blockquote>
+<p>Prefer your custom shader? You can use <strong>any</strong> shader with Polybrush - see <a href="../shaders">Writing Texture Blend Shaders</a> for more information.</p>
+</blockquote>
+<p>We can now paint and blend textures on the mesh:</p>
+<ol>
+<li>Activate <a href="../modes/texture-blending"><strong>Texture Blending Mode</strong></a> by clicking it's icon (<img alt="texture-blending" src="../images/icons/Bricks.png" />) in the <a href="../panel-overview/#mode-toolbar"><strong>Mode Toolbar</strong></a>.</li>
+<li>Click on a texture in the bottom of the <a href="../panel-overview"><strong>Polybrush Panel</strong></a> to select it.</li>
+<li>Hover your mouse over the Sphere, and <code>Left Click</code> to paint, <code>Shift Left Click</code> to erase the selected texture.</li>
+</ol>
+<div style="text-align:center">
+<img src="../images/SphereMesh_TextureBlend.png" alt="Texturing Sphere">
+</div>
+
+<blockquote>
+<p><em>Textures kindly provided by <a href="../www.GameTextures.com">gametextures.com</a></em></p>
+</blockquote>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>Congratulations, you've learned the essentials of Polybrush!  You may now <em>Choose Your Own Path:</em></p>
+<p><strong>The Path of Adventure and Dubious Wisdom:</strong></p>
+<p>Jump right in and learn the rest as you go.  You can always return to these docs or ask us if you have specific questions.  Enjoy!</p>
+<p><strong>The Path of Infinite Wisdom:</strong></p>
+<p>Use the handy-dandy topic links (on your left) to jump quickly through these docs.  Whether you skim, read in-depth, or just watch video tutorials, you'll be lvl60 in no time.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../interface/" class="btn btn-neutral float-right" title="The Interface">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../interface/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Settings - Polybrush</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../css/alerts.css" rel="stylesheet">
+  <link href="../css/extra.css" rel="stylesheet">
+  <link href="../css/general.css" rel="stylesheet">
+  <link href="../css_site/site.css" rel="stylesheet">
+  <link href="../css_site/youtube.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Settings";
+    var mkdocs_page_input_path = "settings.md";
+    var mkdocs_page_url = "/settings/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Polybrush</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../quickstart/">Quick Start</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../interface/">The Interface</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Modes</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/modes/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/raise/">Push / Pull</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/smooth/">Smooth</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/color/">Vertex Color</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/texture/">Texture Blend</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../brushMirroring/">Brush Mirroring</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../brushSettings/">Brush Settings</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../shaders/">Writing Texture Blend Shaders</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Settings</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#rebuild-normals">Rebuild Normals</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#rebuild-mesh-collider">Rebuild Mesh Collider</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#lock-brush-to-first">Lock Brush to First</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#ignore-unselected">Ignore Unselected</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#anchor-brush-settings">Anchor Brush Settings</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#additional-vertex-streams">Additional Vertex Streams</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#hide-wireframe">Hide Wireframe</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#brush-handle-color">Brush Handle Color</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#brush-gradient">Brush Gradient</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../troubleshooting/">Troubleshooting / F.A.Q.</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Polybrush</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Settings</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div style="text-align:center">
+<img src="../images/PolybrushPanel_Settings_WithShadow.png" alt="General Settings">
+</div>
+
+<h3 id="rebuild-normals">Rebuild Normals</h3>
+<p>When <strong>Rebuild Normals</strong> is enabled <strong>Polybrush</strong> will automatically recalculate the mesh normals after a brush has been applied.</p>
+<h3 id="rebuild-mesh-collider">Rebuild Mesh Collider</h3>
+<p>When <strong>Rebuild Mesh Collider</strong> is enabled <strong>Polybrush</strong> will automatically recalculate the mesh collider source after a brush has been applied.  If the target object does not have a Mesh Collider this setting is ignored.</p>
+<h3 id="lock-brush-to-first">Lock Brush to First</h3>
+<p>If <strong>Lock Brush to First</strong> is enabled <strong>Polybrush</strong> will not let the brush affect any other mesh after a drag has been started.  This is useful for situations where a mesh may be partially obscured by another.  For example, where a beach meets the water:  You may want to sculpt the beach terrain without affecting the water, and by default <strong>Polybrush</strong> will apply to any selected mesh that the mouse is hovering.</p>
+<h3 id="ignore-unselected">Ignore Unselected</h3>
+<p>When <strong>Ignore Unselected</strong> is enabled the mouse will always show a brush when hovering a selected mesh, even if another unselected mesh is obscuring it's view.</p>
+<p><img alt="Ignore Selected On" src="../ignoreUnselected.jpg" /></p>
+<p>If <strong>Ignore Unselected</strong> is off, the mouse will always register the first GameObject it is hovering, which may not be in the current selection.</p>
+<p><img alt="Ignore Unselected Off" src="../ignoreUnselectedOff.jpg" /></p>
+<p>When a brush stroke is applied it will always ignore unselected meshes until the drag is complete.</p>
+<h3 id="anchor-brush-settings">Anchor Brush Settings</h3>
+<p>When enabled the <strong>Brush Settings</strong> GUI items will stay locked to the top of the window regardless of where the scroll bar is.</p>
+<h3 id="additional-vertex-streams">Additional Vertex Streams</h3>
+<p>Additional Vertex Streams is a new feature in Unity that allows an extra mesh to be attached to the <code>MeshRenderer</code> that will override any duplicate attributes.</p>
+<p>This means that instead of Polybrush having to copy and instantiate a copy of any edited mesh, a partial <code>additionalVertexStream</code> mesh can instead be appended and edited.</p>
+<p>Note that once enabled any mesh that has been modified with <code>additionalVertexStreams</code> will always make use of the stream mesh.  Ie, toggling this feauture off will "lock" any edited mesh attributes in.  To reset these meshes, simply find the <code>Additional Vertex Streams</code> component and click the <code>Delete</code> button.  This will clear any changes applied by <code>additionalVertexStreams</code>.</p>
+<h3 id="hide-wireframe">Hide Wireframe</h3>
+<p>When this option is enabled <strong>Polybrush</strong> will hide the wireframe of the currently hovering mesh object.</p>
+<h3 id="brush-handle-color">Brush Handle Color</h3>
+<p>This sets the color of the falloff disc in the Scene view, as well as the vertex billboards inside the falloff zone.</p>
+<h3 id="brush-gradient">Brush Gradient</h3>
+<p><strong>Brush Gradient</strong> sets the colors used for the vertex sprites outside the falloff zone, from most affected to least.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../troubleshooting/" class="btn btn-neutral float-right" title="Troubleshooting / F.A.Q.">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../shaders/" class="btn btn-neutral" title="Writing Texture Blend Shaders"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../shaders/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../troubleshooting/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

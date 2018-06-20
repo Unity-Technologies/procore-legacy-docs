@@ -1,0 +1,7 @@
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
+Assets/
+Library/
+ProjectSettings/
+docs/
+polybrush.sln

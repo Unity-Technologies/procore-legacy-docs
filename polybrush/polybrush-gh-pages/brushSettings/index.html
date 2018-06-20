@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Brush Settings - Polybrush</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../css/alerts.css" rel="stylesheet">
+  <link href="../css/extra.css" rel="stylesheet">
+  <link href="../css/general.css" rel="stylesheet">
+  <link href="../css_site/site.css" rel="stylesheet">
+  <link href="../css_site/youtube.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Brush Settings";
+    var mkdocs_page_input_path = "brushSettings.md";
+    var mkdocs_page_url = "/brushSettings/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Polybrush</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../quickstart/">Quick Start</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../interface/">The Interface</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Modes</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/modes/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/raise/">Push / Pull</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/smooth/">Smooth</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/color/">Vertex Color</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../modes/texture/">Texture Blend</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../brushMirroring/">Brush Mirroring</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Brush Settings</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#a-brush-preset-selector">A) Brush Preset Selector</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#b-save-brush">B) Save Brush</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#c-brush-options">C) Brush Options</a></li>
+                
+                    <li><a class="toctree-l4" href="#minmax-values">Min/Max Values</a></li>
+                
+                    <li><a class="toctree-l4" href="#radius">Radius</a></li>
+                
+                    <li><a class="toctree-l4" href="#falloff">Falloff</a></li>
+                
+                    <li><a class="toctree-l4" href="#strength">Strength</a></li>
+                
+                    <li><a class="toctree-l4" href="#falloff-curve">Falloff Curve</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#scene-gizmo-example">Scene Gizmo Example</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../shaders/">Writing Texture Blend Shaders</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../settings/">Settings</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../troubleshooting/">Troubleshooting / F.A.Q.</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Polybrush</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Brush Settings</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><strong>Brush Settings</strong> determines how a brush will affect meshes.  In the image below I've used the gear icon to expand the settings panel, exposing 3 additional settings.</p>
+<div style="text-align:center">
+<img src="../images/PolybrushPanel_BrushSettings_WithLetters.png" alt="Brush Settings">
+</div>
+
+<h3 id="a-brush-preset-selector">A) Brush Preset Selector</h3>
+<p>Click this drop-down to choose from saved Brush Presets</p>
+<h3 id="b-save-brush">B) Save Brush</h3>
+<p>Save the current brush settings as a new Preset, or overwrite an existing Preset</p>
+<h3 id="c-brush-options">C) Brush Options</h3>
+<h4 id="minmax-values"><img alt="icon" src="../images/icons/FoldOut_Closed.png" /> Min/Max Values</h4>
+<ul>
+<li>Min: This is the minimum value the <strong>Radius</strong> slider will allow.  This value cannot be negative.</li>
+<li>Max: This is the maximum value the <strong>Radius</strong> slider will allow.  This value cannot be less than <strong>Brush Radius Min</strong>.</li>
+</ul>
+<h4 id="radius"><img alt="icon" src="../images/icons/Radius.png" /> Radius</h4>
+<p>This value determines how big your brush's entire effective area is.  The <strong>Radius</strong> is shown as the second colored ring in the scene view.</p>
+<blockquote>
+<p><em>Shortcut</em>: Control (Command) + Mouse Wheel</p>
+</blockquote>
+<h4 id="falloff"><img alt="icon" src="../images/icons/InnerRadius.png" />Falloff</h4>
+<p>Falloff is the distance from the center of a brush at which the strength begins to taper to 0.  This value is normalized; 1 means the entire brush gets full strength, 0 means the very center point of a brush is full strength and the edges are 0.</p>
+<blockquote>
+<p><em>Shortcut</em>: Shift + Mouse Wheel</p>
+</blockquote>
+<h4 id="strength"><img alt="icon" src="../images/icons/Strength.png" /> Strength</h4>
+<p>Strength is the effectiveness of this brush.  The actual applied strength also depends on the Falloff setting.</p>
+<blockquote>
+<p><em>Shortcut</em>: Control (Command) + Shift + Mouse Wheel</p>
+</blockquote>
+<h4 id="falloff-curve"><img alt="icon" src="../images/icons/Falloff.png" /> Falloff Curve</h4>
+<p>The falloff curve determines how values between the falloff and radius will be calculated.</p>
+<hr />
+<h3 id="scene-gizmo-example">Scene Gizmo Example</h3>
+<p><img alt="Scene Gizmo" src="../brushSettingsScene.jpg" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../shaders/" class="btn btn-neutral float-right" title="Writing Texture Blend Shaders">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../brushMirroring/" class="btn btn-neutral" title="Brush Mirroring"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../brushMirroring/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../shaders/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

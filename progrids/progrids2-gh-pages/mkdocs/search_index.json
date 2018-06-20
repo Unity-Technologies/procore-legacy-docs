@@ -1,0 +1,89 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "What is ProGrids?\n\n\n\nIf you have used virtually any other 3D tool, you are probably already familiar with grid snapping. Keeping objects aligned and evenly spaced is an important part of just about every level design workflow. If this still sounds confusing, don't worry; all the important stuff happens on it's own, in the background.\n\n\n\n\n\nQuick Start\n\n\nHere's the basic idea: you have a \"world grid\" (one that never, ever changes position or orientation). Any object you move in Unity will snap to that grid as you move it. This means you always know exactly where items are placed, how far they are from each other, how far you are moving them, etc.\n\n\nOnce you've \ninstalled\n ProGrids, follow these steps to get started snapping.\n\n\n\n\nOpen \nTools > ProGrids > ProGrids Window\n\n\nTo change snap settings, click the \ngrids\n dropdown in the top left of the active scene view\n\n\nTo close ProGrids, select \nTools > ProGrids > Close ProGrids\n\n\n\n\nHelpful Links\n\n\n\n\nOnline Documentation: \nwww.procore3d.com/docs/progrids\n\n\nTutorial Videos + Full Info: \nwww.procore3d.com/progrids\n\n\nSupport and Troubleshooting: \nwww.procore3d.com/forum",
+            "title": "Home"
+        },
+        {
+            "location": "/#quick-start",
+            "text": "Here's the basic idea: you have a \"world grid\" (one that never, ever changes position or orientation). Any object you move in Unity will snap to that grid as you move it. This means you always know exactly where items are placed, how far they are from each other, how far you are moving them, etc.  Once you've  installed  ProGrids, follow these steps to get started snapping.   Open  Tools > ProGrids > ProGrids Window  To change snap settings, click the  grids  dropdown in the top left of the active scene view  To close ProGrids, select  Tools > ProGrids > Close ProGrids",
+            "title": "Quick Start"
+        },
+        {
+            "location": "/#helpful-links",
+            "text": "Online Documentation:  www.procore3d.com/docs/progrids  Tutorial Videos + Full Info:  www.procore3d.com/progrids  Support and Troubleshooting:  www.procore3d.com/forum",
+            "title": "Helpful Links"
+        },
+        {
+            "location": "/install/",
+            "text": "Installing ProGrids\n\n\n\n\n\n\n\n\nOpen Unity.\n\n\nOpen the Asset Store \nWindow > Asset Store\n.\n\n\nIn the Asset Store search, type \"ProGrids\".\n\n\nSelect \"ProGrids\" in the search results.\n\n\nClick the blue \"Download\" button.\n\n\nAfter Unity has  downloaded the package, click the \"Import\" button.",
+            "title": "Install"
+        },
+        {
+            "location": "/interface/",
+            "text": "The Interface\n\n\n\n\n\nThe ProGrids Panel displays the following buttons and options:\n\n\n1. Snap Size and Settings \n\n\nClick this button to open the snap settings window, where-in you can set snap increment and other settings.\n\n\nUnits are in meters by default, or you can choose inches, feet, etc. See the \nPreferences\n section for more details.\n\n\n\n\nHint\n Use the \n+\n and \n-\n keys to quickly change the Snap Size\n\n\n\n\n\n\n\n\n\n\n\n\nSetting\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nSnap Value\n\n\nSet the increment to snap objects to in world coordinates\n\n\n\n\n\n\nMajor Line Increment\n\n\nHow many lines to show between highlighted lines\n\n\n\n\n\n\nSnap on Scale\n\n\nWhen enabled, applies snapping to object scale values\n\n\n\n\n\n\nSnap as Group\n\n\nWhen enabled, multiple selected objects retain their relative positions to one another when moving\n\n\n\n\n\n\nGrid Units\n\n\nDefines the unit of measurement that snap value is measured in\n\n\n\n\n\n\nAngle\n\n\nWhen in orthographic views an additional line is drawn at this angle\n\n\n\n\n\n\nPredictive Grid\n\n\nWhen enabled, ProGrids will automatically set the rendering grid plane according to object movement\n\n\n\n\n\n\n\n\n2. Grid Visibility \n\n\nToggle the grid visuals on or off.\n\n\nNote that objects will still snap with grid visibility toggled off.\n\n\n3. Snapping Enabled \n\n\nEnable or disable snapping to the grid when moving objects.\n\n\n4. Push to Grid \n\n\nMove all selected objects to on-grid positions, on each axis.\n\n\n5. Follow Grid \n\n\nWhen enabled the grid will automatically move position itself at the origin of the current selection. When disabled (or \"locked\") the grid stays anchored at it's position.\n\n\nWhile \nlocked\n you can \"nudge\" the X, Y, or Z grid along it's axis by using the bracket (\n[ ]\n) keys.\n\n\n6, 7, 8, 9. Set Grid Plane\n\n\n6. Set Grid Plane X \n\n\n\nSet the grid to render on the \nX\n axis (facing to the left/right).\n\n\n7. Set Grid Plane Y \n\n\n\nSet the grid to render on the \nY\n axis (facing up/down).\n\n\n8. Set Grid Plane Z \n\n\n\nSet the grid to render on the \nZ\n axis (facing forwards/backwards).\n\n\n9. Perspective Grid \n\n\n\nRenders a grid with all 3 axes.\n\n\n\n\nAngle Visibility \n\n\nToggle the visibility of the angle guides when in orthographic scene rendering mode.\n\n\nKeyboard Shortcuts\n\n\nSingle key shortcuts are enabled when the scene view is in focus.\n\n\n+\n \nor\n \n-\n : Hit the \"plus\" or \"minus\" key to make the grid larger/smaller by one increment (see \"Customizing ProGrids\")\n\n\n[\n \nor\n \n]\n : Use the bracket keys to nudge the X, Y, or Z grids perpendicular to their facing direction, by one increment.\n\n\nS\n : Hold \nS\n to swap between Axis Constraint Modes (see \"Axis Constraints\", above)",
+            "title": "Interface"
+        },
+        {
+            "location": "/interface/#1-snap-size-and-settings",
+            "text": "Click this button to open the snap settings window, where-in you can set snap increment and other settings.  Units are in meters by default, or you can choose inches, feet, etc. See the  Preferences  section for more details.   Hint  Use the  +  and  -  keys to quickly change the Snap Size       Setting  Description      Snap Value  Set the increment to snap objects to in world coordinates    Major Line Increment  How many lines to show between highlighted lines    Snap on Scale  When enabled, applies snapping to object scale values    Snap as Group  When enabled, multiple selected objects retain their relative positions to one another when moving    Grid Units  Defines the unit of measurement that snap value is measured in    Angle  When in orthographic views an additional line is drawn at this angle    Predictive Grid  When enabled, ProGrids will automatically set the rendering grid plane according to object movement",
+            "title": "1. Snap Size and Settings"
+        },
+        {
+            "location": "/interface/#2-grid-visibility",
+            "text": "Toggle the grid visuals on or off.  Note that objects will still snap with grid visibility toggled off.",
+            "title": "2. Grid Visibility"
+        },
+        {
+            "location": "/interface/#3-snapping-enabled",
+            "text": "Enable or disable snapping to the grid when moving objects.",
+            "title": "3. Snapping Enabled"
+        },
+        {
+            "location": "/interface/#4-push-to-grid",
+            "text": "Move all selected objects to on-grid positions, on each axis.",
+            "title": "4. Push to Grid"
+        },
+        {
+            "location": "/interface/#5-follow-grid",
+            "text": "When enabled the grid will automatically move position itself at the origin of the current selection. When disabled (or \"locked\") the grid stays anchored at it's position.  While  locked  you can \"nudge\" the X, Y, or Z grid along it's axis by using the bracket ( [ ] ) keys.",
+            "title": "5. Follow Grid"
+        },
+        {
+            "location": "/interface/#6-7-8-9-set-grid-plane",
+            "text": "",
+            "title": "6, 7, 8, 9. Set Grid Plane"
+        },
+        {
+            "location": "/interface/#angle-visibility",
+            "text": "Toggle the visibility of the angle guides when in orthographic scene rendering mode.",
+            "title": "Angle Visibility"
+        },
+        {
+            "location": "/interface/#keyboard-shortcuts",
+            "text": "Single key shortcuts are enabled when the scene view is in focus.  +   or   -  : Hit the \"plus\" or \"minus\" key to make the grid larger/smaller by one increment (see \"Customizing ProGrids\")  [   or   ]  : Use the bracket keys to nudge the X, Y, or Z grids perpendicular to their facing direction, by one increment.  S  : Hold  S  to swap between Axis Constraint Modes (see \"Axis Constraints\", above)",
+            "title": "Keyboard Shortcuts"
+        },
+        {
+            "location": "/preferences/",
+            "text": "Customizing ProGrids\n\n\n\nWith ProGrids you can set custom grid planes, colors, snap increments, and more.\n\n\nProGrids has many options that you can customize, to better suit your needs/uses/habits:\n\n\n\n\nSnap Behavior\n\n\n\n\n\n\n\n\nSetting\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTenth Line Alpha\n\n\nEvery 10th grid line will have an increased opacity. This value sets what opacity is.\n\n\n\n\n\n\nGrid Units\n\n\nThe unit of measurement that the snap value is represented in.\n\n\n\n\n\n\nSnap on Scale\n\n\nWhen enabled the scale of objects is snapped.\n\n\n\n\n\n\nSnap Method\n\n\nWhen translating objects ProGrids can snap per-axis (Snap on Selected Axis) or on all axes.\n\n\n\n\n\n\nSync w/ Unity Snap\n\n\nWhen enabled, setting the snap value also sets the Unity move snap value.\n\n\n\n\n\n\n\n\nGrid Colors\n\n\nSet the colors used for each grid axis. Applies to both plane and perspective grid rendering.\n\n\nShortcuts\n\n\nThe following shortcuts are available only when the Scene view is currently focused.\n\n\n\n\n\n\n\n\nShortcut\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nIncrease Grid Size\n\n\nDoubles the snap value.\n\n\n\n\n\n\nDecrease Grid Size\n\n\nHalves the snap value.\n\n\n\n\n\n\nNudge Perspective Backward\n\n\nWhen the grid is locked, this moves it backwards along it's axis.\n\n\n\n\n\n\nNudge Perspective Forward\n\n\nWhen the grid is locked, this moves it forward along it's axis.\n\n\n\n\n\n\nCycle Perspective\n\n\nChange the scene camera orientation from orthographic X, to Y, to Z, to perspective.",
+            "title": "Preferences"
+        },
+        {
+            "location": "/preferences/#snap-behavior",
+            "text": "Setting  Description      Tenth Line Alpha  Every 10th grid line will have an increased opacity. This value sets what opacity is.    Grid Units  The unit of measurement that the snap value is represented in.    Snap on Scale  When enabled the scale of objects is snapped.    Snap Method  When translating objects ProGrids can snap per-axis (Snap on Selected Axis) or on all axes.    Sync w/ Unity Snap  When enabled, setting the snap value also sets the Unity move snap value.",
+            "title": "Snap Behavior"
+        },
+        {
+            "location": "/preferences/#grid-colors",
+            "text": "Set the colors used for each grid axis. Applies to both plane and perspective grid rendering.",
+            "title": "Grid Colors"
+        },
+        {
+            "location": "/preferences/#shortcuts",
+            "text": "The following shortcuts are available only when the Scene view is currently focused.     Shortcut  Description      Increase Grid Size  Doubles the snap value.    Decrease Grid Size  Halves the snap value.    Nudge Perspective Backward  When the grid is locked, this moves it backwards along it's axis.    Nudge Perspective Forward  When the grid is locked, this moves it forward along it's axis.    Cycle Perspective  Change the scene camera orientation from orthographic X, to Y, to Z, to perspective.",
+            "title": "Shortcuts"
+        }
+    ]
+}
