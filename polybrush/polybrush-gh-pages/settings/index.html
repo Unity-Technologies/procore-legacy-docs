@@ -7,13 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  
-  <title>Settings - Polybrush</title>
-  
-
   <link rel="shortcut icon" href="../img/favicon.ico">
-
-  
+  <title>Settings - Polybrush</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -24,7 +19,6 @@
   <link href="../css/general.css" rel="stylesheet">
   <link href="../css_site/site.css" rel="stylesheet">
   <link href="../css_site/youtube.css" rel="stylesheet">
-
   
   <script>
     // Current page data
@@ -35,9 +29,7 @@
   
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script>
-  <script src="../js/theme.js"></script> 
-
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -57,137 +49,109 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
+	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../quickstart/">Quick Start</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../quickstart/">Quick Start</a>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../interface/">The Interface</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../interface/">The Interface</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Modes</span>
     <ul class="subnav">
-    <li><span>Modes</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../modes/modes/">Overview</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../modes/raise/">Push / Pull</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../modes/smooth/">Smooth</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../modes/color/">Vertex Color</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../modes/texture/">Texture Blend</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../modes/modes/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../modes/sculpt/">Sculpt</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../modes/smooth/">Smooth</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../modes/color/">Vertex Color</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../modes/texture/">Texture Blend</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../modes/place/">Prefab Placement</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../brushMirroring/">Brush Mirroring</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../brushMirroring/">Brush Mirroring</a>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../brushSettings/">Brush Settings</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../brushSettings/">Brush Settings</a>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../shaders/">Writing Texture Blend Shaders</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../shaders/">Writing Texture Blend Shaders</a>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Settings</a>
-        
-            <ul>
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Settings</a>
+    <ul class="subnav">
             
-                <li class="toctree-l3"><a href="#rebuild-normals">Rebuild Normals</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#rebuild-mesh-collider">Rebuild Mesh Collider</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#lock-brush-to-first">Lock Brush to First</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#ignore-unselected">Ignore Unselected</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#anchor-brush-settings">Anchor Brush Settings</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#additional-vertex-streams">Additional Vertex Streams</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#hide-wireframe">Hide Wireframe</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#brush-handle-color">Brush Handle Color</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#brush-gradient">Brush Gradient</a></li>
-                
-            
-            </ul>
-        
-    </li>
-<li>
+    <li class="toctree-l2"><a href="#rebuild-normals">Rebuild Normals</a></li>
+    
+
+    <li class="toctree-l2"><a href="#rebuild-mesh-collider">Rebuild Mesh Collider</a></li>
+    
+
+    <li class="toctree-l2"><a href="#lock-brush-to-first">Lock Brush to First</a></li>
+    
+
+    <li class="toctree-l2"><a href="#anchor-brush-settings">Anchor Brush Settings</a></li>
+    
+
+    <li class="toctree-l2"><a href="#additional-vertex-streams">Additional Vertex Streams</a></li>
+    
+
+    <li class="toctree-l2"><a href="#hide-wireframe">Hide Wireframe</a></li>
+    
+
+    <li class="toctree-l2"><a href="#brush-handle-color">Brush Handle Color</a></li>
+    
+
+    <li class="toctree-l2"><a href="#vertex-render-size">Vertex Render Size</a></li>
+    
+
+    <li class="toctree-l2"><a href="#brush-gradient">Brush Gradient</a></li>
+    
+
+    </ul>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../troubleshooting/">Troubleshooting / F.A.Q.</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../troubleshooting/">Troubleshooting / F.A.Q.</a>
+	    </li>
           
         </ul>
       </div>
@@ -222,7 +186,7 @@
             <div class="section">
               
                 <div style="text-align:center">
-<img src="../images/PolybrushPanel_Settings_WithShadow.png" alt="General Settings">
+<img src="../images/Panel_Settings.png" alt="General Settings">
 </div>
 
 <h3 id="rebuild-normals">Rebuild Normals</h3>
@@ -231,12 +195,6 @@
 <p>When <strong>Rebuild Mesh Collider</strong> is enabled <strong>Polybrush</strong> will automatically recalculate the mesh collider source after a brush has been applied.  If the target object does not have a Mesh Collider this setting is ignored.</p>
 <h3 id="lock-brush-to-first">Lock Brush to First</h3>
 <p>If <strong>Lock Brush to First</strong> is enabled <strong>Polybrush</strong> will not let the brush affect any other mesh after a drag has been started.  This is useful for situations where a mesh may be partially obscured by another.  For example, where a beach meets the water:  You may want to sculpt the beach terrain without affecting the water, and by default <strong>Polybrush</strong> will apply to any selected mesh that the mouse is hovering.</p>
-<h3 id="ignore-unselected">Ignore Unselected</h3>
-<p>When <strong>Ignore Unselected</strong> is enabled the mouse will always show a brush when hovering a selected mesh, even if another unselected mesh is obscuring it's view.</p>
-<p><img alt="Ignore Selected On" src="../ignoreUnselected.jpg" /></p>
-<p>If <strong>Ignore Unselected</strong> is off, the mouse will always register the first GameObject it is hovering, which may not be in the current selection.</p>
-<p><img alt="Ignore Unselected Off" src="../ignoreUnselectedOff.jpg" /></p>
-<p>When a brush stroke is applied it will always ignore unselected meshes until the drag is complete.</p>
 <h3 id="anchor-brush-settings">Anchor Brush Settings</h3>
 <p>When enabled the <strong>Brush Settings</strong> GUI items will stay locked to the top of the window regardless of where the scroll bar is.</p>
 <h3 id="additional-vertex-streams">Additional Vertex Streams</h3>
@@ -247,6 +205,8 @@
 <p>When this option is enabled <strong>Polybrush</strong> will hide the wireframe of the currently hovering mesh object.</p>
 <h3 id="brush-handle-color">Brush Handle Color</h3>
 <p>This sets the color of the falloff disc in the Scene view, as well as the vertex billboards inside the falloff zone.</p>
+<h3 id="vertex-render-size">Vertex Render Size</h3>
+<p>Size of the vertices displayed when Sculpting meshes.</p>
 <h3 id="brush-gradient">Brush Gradient</h3>
 <p><strong>Brush Gradient</strong> sets the colors used for the vertex sprites outside the falloff zone, from most affected to least.</p>
               
@@ -278,10 +238,10 @@
       </div>
 
     </section>
-
+    
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -292,6 +252,7 @@
       
     </span>
 </div>
+    <script src="../js/theme.js"></script>
 
 </body>
 </html>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Vertex Color - Polybrush</title>
+  <title>Prefab Placement - Polybrush</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -22,9 +22,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Vertex Color";
-    var mkdocs_page_input_path = "modes\\color.md";
-    var mkdocs_page_url = "/modes/color/";
+    var mkdocs_page_name = "Prefab Placement";
+    var mkdocs_page_input_path = "modes\\place.md";
+    var mkdocs_page_url = "/modes/place/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -83,9 +83,17 @@
                     
     <a class="" href="../smooth/">Smooth</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../color/">Vertex Color</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../texture/">Texture Blend</a>
+                </li>
                 <li class=" current">
                     
-    <a class="current" href="./">Vertex Color</a>
+    <a class="current" href="./">Prefab Placement</a>
     <ul class="subnav">
             
     <li class="toctree-l3"><a href="#about">About</a></li>
@@ -94,18 +102,10 @@
     <li class="toctree-l3"><a href="#usage">Usage</a></li>
     
 
-    <li class="toctree-l3"><a href="#vertex-color-mode-settings">Vertex Color Mode Settings</a></li>
+    <li class="toctree-l3"><a href="#prefab-placement-options">Prefab Placement Options</a></li>
     
 
     </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../texture/">Texture Blend</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../place/">Prefab Placement</a>
                 </li>
     </ul>
 	    </li>
@@ -161,7 +161,7 @@
         
       
     
-    <li>Vertex Color</li>
+    <li>Prefab Placement</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -171,44 +171,22 @@
           <div role="main">
             <div class="section">
               
-                <div class="alert-box warning">
-<b>Important: </b>Vertex Color mode requires special shaders to work.  If you're not able to paint colors on a mesh, change the material to <i>ProCore/Polybrush/Material/Standard Vertex Color</i> and try again.
+                <div style="text-align:center">
+<img src="../../images/ModeExamples_Place.png" alt="Prefab Placement Example">
 </div>
 
-<div style="text-align:center">
-<img src="../../images/ModeExamples_Color.png" alt="Painting Sphere">
-</div>
-
-<h3 id="about">About</h3>
-<p><strong>Vertex Color</strong> mode enables you to set the vertex colors of a mesh with a brush or paint bucket.  Use the toolbar under <em>Paint Settings</em> to choose between the two modes.</p>
-<p><strong>Vertex Color</strong> mode will only work if the shader a material uses supports vertex colors.  Most default Unity shaders do not support vertex colors!  <strong>Polybrush</strong> will show a warning when hovering a mesh with an incompatible shader.</p>
-<p><strong>Polybrush</strong> includes some default materials that support vertex colors.  Use one of these materials if you want to paint colors on a mesh (or alternatively any other shader that reads the <code>mesh.colors</code> attribute).</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Path</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Diffuse Vertex Color</strong></td>
-<td>A Legacy Diffuse shader with support for a texture, normal map, and vertex colors.</td>
-<td><em>ProCore/Polybrush/Materials/Diffuse Vertex Color</em></td>
-</tr>
-<tr>
-<td><strong>Standard Vertex Color</strong></td>
-<td>This material behaves similarly to the Standard shader, but with support for painting vertex colors.</td>
-<td><em>ProCore/Polybrush/Materials/Standard Vertex Color</em></td>
-</tr>
-</tbody>
-</table>
-<h3 id="usage">Usage</h3>
-<p>Select any mesh object, enter <strong>Vertex Color</strong> mode, then click and drag while hovering over the selected mesh.</p>
-<p>The actual color applied to vertices will be affected by the current <strong>Brush Settings</strong>.  Check out the <a href="../../brushSettings/">Brush Settings</a> page for more information on how.</p>
-<h3 id="vertex-color-mode-settings">Vertex Color Mode Settings</h3>
-<p><strong>Brush Type</strong></p>
+<h2 id="about">About</h2>
+<p>Prefab Placement mode enables you to "paint" prefabs onto a mesh, similar to painting in detail meshes (grass, rocks, etc) with the Terrain Tools.</p>
+<h2 id="usage">Usage</h2>
+<ol>
+<li>In your scene, select the mesh you intend to paint on</li>
+<li>Click the <strong>Prefab Placement</strong> toolbar button (<img alt="icon" src="../../images/icons/FlowerAndGrass.png" />)</li>
+<li>If you haven't already, add your prefabs by drag-and-dropping them into the Prefabs area (labeled "Drag Prefabs here!")</li>
+<li>Click to select a single prefab, or SHIFT-click to select multiple- you will see a green bar highlight below each selected prefab</li>
+<li>Modify your <a href="../../brushSettings"><strong>Brush</strong></a> if needed, and paint onto the mesh in your scene</li>
+</ol>
+<h2 id="prefab-placement-options">Prefab Placement Options</h2>
+<p><strong>Use Pivot</strong></p>
 <table>
 <thead>
 <tr>
@@ -218,29 +196,62 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Brush</strong></td>
-<td>Colors are applied smoothly across Certices</td>
+<td>off</td>
+<td>Prefabs will be placed directly on top of the mesh</td>
 </tr>
 <tr>
-<td><strong>Fill</strong></td>
-<td>Colors are applied to Faces</td>
-</tr>
-<tr>
-<td><strong>Flood</strong></td>
-<td>Colors are applied to the entire Object</td>
+<td><strong>ON</strong></td>
+<td>Prefabs will be placed using their pivot point</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Color Mask</strong></p>
-<p>Allows you to selectively modify color values by channel (<code>R, G, B, A</code>).  By default the all color channels are affected by the brush.  Toggling off channels tells <strong>Polybrush</strong> to leave those channel values alone when modifying the mesh.</p>
-<p><strong>Brush Color</strong></p>
-<p>Shows the current brush color- to select a new brush color, either click an element in the Color Palette list or manually change the Brush Color field.</p>
-<blockquote>
-<p>Note: The final color the brush applies also depends on the <strong>Brush Strength</strong> and the underlying mesh color.</p>
-</blockquote>
-<p><strong>Color Palette</strong></p>
-<p>The <strong>Color Palette</strong> provides quick access to brush colors.  You can add, remove, or change colors in this list at any time.  To reset a palette back to the default values, click <em>Set Defaults</em> below the list view.</p>
-<p>To add a new <strong>Color Palette</strong> open the <strong>Palettes</strong> popup and select <em>Add Palette...</em>.</p>
+<p><strong>Hit Surface is Parent</strong></p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>off</td>
+<td>After placement, prefabs will <strong>not</strong> be parented to the mesh being painted on</td>
+</tr>
+<tr>
+<td><strong>ON</strong></td>
+<td>After placement, each prefab will be parented to the mesh being painted on</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Avoid Overlap</strong></p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>off</td>
+<td>Polybrush will not attempt to avoid overlapping prefabs</td>
+</tr>
+<tr>
+<td><strong>ON</strong></td>
+<td>Polybrush will attempt to avoid placing prefabs where they might overlap with others</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Prefab Palette</strong></p>
+<p>Save and load sets of Prefabs for future use.</p>
+<p><strong>Prefabs</strong></p>
+<ul>
+<li>Adjust the slider to change Prefab preview size</li>
+<li>Drag prefabs into the box to add them for use</li>
+<li>Select a prefab and hit "Backspace" to remove it</li>
+<li>Click to select, SHIFT-click to select multiple prefabs</li>
+</ul>
               
             </div>
           </div>
@@ -248,10 +259,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../texture/" class="btn btn-neutral float-right" title="Texture Blend">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../brushMirroring/" class="btn btn-neutral float-right" title="Brush Mirroring">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../smooth/" class="btn btn-neutral" title="Smooth"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../texture/" class="btn btn-neutral" title="Texture Blend"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -277,10 +288,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../smooth/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../texture/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../texture/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../brushMirroring/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

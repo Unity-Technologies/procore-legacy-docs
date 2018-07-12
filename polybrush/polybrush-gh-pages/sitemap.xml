@@ -3,24 +3,24 @@
 
     
     <url>
-     <loc>None/</loc>
-     <lastmod>2016-10-27</lastmod>
+     <loc>/</loc>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/quickstart/</loc>
-     <lastmod>2016-10-27</lastmod>
+     <loc>/quickstart/</loc>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/interface/</loc>
-     <lastmod>2016-10-27</lastmod>
+     <loc>/interface/</loc>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -28,32 +28,38 @@
     
         
     <url>
-     <loc>None/modes/modes/</loc>
-     <lastmod>2016-10-27</lastmod>
+     <loc>/modes/modes/</loc>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/modes/raise/</loc>
-     <lastmod>2016-10-27</lastmod>
+     <loc>/modes/sculpt/</loc>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/modes/smooth/</loc>
-     <lastmod>2016-10-27</lastmod>
+     <loc>/modes/smooth/</loc>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/modes/color/</loc>
-     <lastmod>2016-10-27</lastmod>
+     <loc>/modes/color/</loc>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/modes/texture/</loc>
-     <lastmod>2016-10-27</lastmod>
+     <loc>/modes/texture/</loc>
+     <lastmod>2018-07-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/modes/place/</loc>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -61,40 +67,40 @@
 
     
     <url>
-     <loc>None/brushMirroring/</loc>
-     <lastmod>2016-10-27</lastmod>
+     <loc>/brushMirroring/</loc>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/brushSettings/</loc>
-     <lastmod>2016-10-27</lastmod>
+     <loc>/brushSettings/</loc>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/shaders/</loc>
-     <lastmod>2016-10-27</lastmod>
+     <loc>/shaders/</loc>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/settings/</loc>
-     <lastmod>2016-10-27</lastmod>
+     <loc>/settings/</loc>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/troubleshooting/</loc>
-     <lastmod>2016-10-27</lastmod>
+     <loc>/troubleshooting/</loc>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
